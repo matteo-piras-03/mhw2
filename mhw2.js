@@ -1,3 +1,19 @@
+//nav_1
+const nav1_my_eBay = document.querySelector("#nav_1_right .relative");
+const nav1_my_eBay_menu = document.querySelector("#nav_1_right .category-menu");
+nav1_my_eBay.addEventListener("click", my_eBay_click);
+function my_eBay_click(event){
+    nav1_my_eBay_menu.classList.toggle("hidden");
+}
+
+//header
+const h_category_button = document.querySelector("#header #category-button");
+const h_category_menu = document.querySelector("#header .category-menu");
+h_category_button.addEventListener("click", category_click);
+function category_click(event){
+    h_category_menu.classList.toggle("hidden");
+}
+
 //section 1
 const s1_dots = document.querySelectorAll("#nav-small-left .dot");
 const s1_buttons = document.querySelectorAll("#nav-small-right button");

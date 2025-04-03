@@ -31,9 +31,21 @@
                 <span>
                     Oggetti che osservi
                 </span>
-                <span>
+                <button class="relative">
                     Il mio eBay <img src="chevron-down.png" class="chevron-down"/>
-                </span>
+                    <div class="category-menu hidden">
+                        <div>
+                            <span><a href="">Riepilogo</a></span>
+                            <span><a href="">Viste di recente</a></span>
+                            <span><a href="">Offerte/Proposte</a></span>
+                            <span><a href="">Cronologia acquisti</a></span>
+                            <span><a href="">Vendite</a></span>
+                            <span><a href="">Ricerche salvate</a></span>
+                            <span><a href="">Venditori salvati</a></span>
+                            <span><a href="">Messaggi</a></span>
+                        </div>
+                    </div>
+                </button>
                 <img src="bell-icon.png" id="bell-icon"/>
                 <img src="shopping-cart-icon.png" id="shopping-cart-icon"/>
             </div>
@@ -49,11 +61,25 @@
         <div class="gray-line"></div>
         <header id="header">
             <img src="eBay_logo.png" class="ebay-logo"/>
-            <div id="scegli_la_categoria">
-                <div>
-                Scegli la <br>categoria
+            <div class="relative">
+                <button id="category-button">
+                    <div>
+                    Scegli la <br>categoria
+                    </div>
+                    <img src="chevron-down.png" class="chevron-down"/>
+                </button>
+                <div class="category-menu hidden">
+                    <div>
+                        <span><a href="">Abbigliamento e accessori</a></span>
+                        <span><a href="">Ricambi veicoli</a></span>
+                        <span><a href="">Sport e viaggi</a></span>
+                        <span><a href="">Casa, arredamento e bricolage</a></span>
+                        <span><a href="">TV, audio e video</a></span>
+                        <span><a href="">Informatica</a></span>
+                        <span><a href="">Telefonia fissa e mobile</a></span>
+                        <span><a href="">Giocattoli e modellismo</a></span>
+                    </div>
                 </div>
-                <img src="chevron-down.png" class="chevron-down"/>
             </div>
             <div id="search_bar">
                 <input type="text" name="query" placeholder="Cerca su eBay" id="search_box" required>
