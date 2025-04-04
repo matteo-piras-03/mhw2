@@ -6,6 +6,14 @@ function my_eBay_click(event){
     nav1_my_eBay_menu.classList.toggle("hidden");
 }
 
+//nav_1_mobile
+const navmobile_menu_button = document.querySelector("#nav_1_mobile #mobile_menu");
+const navmobile_menu = document.querySelector("#nav_1_mobile .category-menu");
+navmobile_menu_button.addEventListener("click", menu_click);
+function menu_click(event){
+    navmobile_menu.classList.toggle("hidden");
+}
+
 //header
 const h_category_button = document.querySelector("#header #category-button");
 const h_category_menu = document.querySelector("#header .category-menu");
@@ -20,7 +28,6 @@ const s1_buttons = document.querySelectorAll("#nav-small-right button");
 const s1 = document.getElementById("section-1");
 const s1_text = document.querySelector("#section-1 .text");
 var active_dot = 0;
-//change_content();
 
 for(const button of s1_buttons){
     button.addEventListener("click", button_click);
@@ -111,4 +118,12 @@ function change_content(){
             s1_img.src = "auction-items.png";
             break;
     }
+}
+
+//footer
+const f_country_button = document.querySelector("#footer #selector");
+const f_country_menu = document.querySelector("#footer .category-menu");
+f_country_button.addEventListener("click", country_click);
+function country_click(event){
+    f_country_menu.classList.toggle("hidden");
 }
